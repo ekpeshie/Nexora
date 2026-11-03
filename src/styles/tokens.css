@@ -1,0 +1,68 @@
+/* Nexora design tokens — dark-only product theme. */
+:root {
+  color-scheme: dark;
+
+  /* Surfaces */
+  --canvas: #10120f;
+  --surface: #191c18;
+  --elevated: #222620;
+  --border: #30362e;
+  --border-strong: #3d4539;
+
+  /* Text */
+  --text: #f3f5ef;
+  --text-2: #aab0a5;
+  --text-3: #8a9185;
+
+  /* Accent (used sparingly: primary action, selection, focus) */
+  --accent: #c6f36a;
+  --accent-ink: #10120f;
+  --accent-soft: rgba(198, 243, 106, 0.12);
+
+  /* Semantic */
+  --pos: #83d9a1;
+  --pos-soft: rgba(131, 217, 161, 0.12);
+  --neg: #ff827c;
+  --neg-soft: rgba(255, 130, 124, 0.12);
+  --warn: #e9be72;
+  --warn-soft: rgba(233, 190, 114, 0.12);
+  --info: #9fb7d6;
+  --info-soft: rgba(159, 183, 214, 0.1);
+
+  /* Type */
+  --font: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --fs-xs: 0.75rem; /* 12 */
+  --fs-sm: 0.8125rem; /* 13 */
+  --fs-md: 0.875rem; /* 14 */
+  --fs-base: 0.9375rem; /* 15 */
+  --fs-lg: 1.125rem; /* 18 */
+  --fs-xl: 1.5rem; /* 24 */
+  --fs-2xl: 2rem; /* 32 */
+  --fs-3xl: 2.5rem; /* 40 */
+
+  /* Spacing (4px grid) */
+  --s1: 4px;
+  --s2: 8px;
+  --s3: 12px;
+  --s4: 16px;
+  --s5: 20px;
+  --s6: 24px;
+  --s8: 32px;
+  --s10: 40px;
+
+  /* Radii */
+  --r-sm: 6px;
+  --r-md: 10px;
+  --r-lg: 14px;
+  --r-pill: 999px;
+
+  /* Layout */
+  --sidebar-w: 232px;
+  --sidebar-w-collapsed: 72px;
+  --bottomnav-h: 64px;
+  --topbar-h: 64px;
+  --focus: 0 0 0 2px var(--canvas), 0 0 0 4px var(--accent);
+
+  --shadow-pop: 0 12px 40px rgba(0, 0, 0, 0.45);
+  --ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+}
