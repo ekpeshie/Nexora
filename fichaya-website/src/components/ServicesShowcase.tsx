@@ -1,5 +1,7 @@
 import { useState } from 'react';
-import { services } from '../data/content';
+import { photo, services } from '../data/content';
+
+const backgrounds = [...new Set(services.map((s) => s.image))];
 
 export default function ServicesShowcase() {
   const [active, setActive] = useState(0);
@@ -15,13 +17,17 @@ export default function ServicesShowcase() {
       </header>
 
       <div className="showcase__panel">
-        {services.map((s, i) => (
+        {backgrounds.map((name) => (
           <img
-            key={s.title}
-            className={`showcase__image${i === active ? ' is-active' : ''}`}
-            src={s.image}
+            key={name}
+            className={`showcase__image${name === current.image ? ' is-active' : ''}`}
+            {...photo(name)}
+            sizes="(max-width: 1440px) calc(100vw - 32px), 1376px"
+            width={1376}
+            height={839}
             alt=""
             loading="lazy"
+            decoding="async"
           />
         ))}
 

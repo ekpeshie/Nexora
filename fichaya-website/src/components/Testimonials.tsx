@@ -9,7 +9,7 @@ export default function Testimonials() {
     <section className="testimonials" aria-label="Testimonials">
       <img className="testimonials__pattern" src={asset('testimonial-pattern.svg')} width={1141} height={441} alt="" />
       <div className="testimonials__inner">
-        <p className="eyebrow">Testimonials</p>
+        <h2 className="eyebrow">Testimonials</h2>
         <blockquote className="testimonials__quote">“{t.quote}”</blockquote>
         <figure className="testimonials__author">
           <img src={t.logo} width={24} height={24} alt="" />

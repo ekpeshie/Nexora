@@ -3,7 +3,7 @@ import { asset, footerColumns, socials } from '../data/content';
 export default function Footer() {
   return (
     <footer className="footer" id="contact">
-      <img className="footer__bg" src={asset('footer-bg.png')} alt="" loading="lazy" />
+      <img className="footer__bg" src={asset('footer-bg.webp')} width={1440} height={690} alt="" loading="lazy" decoding="async" />
 
       <div className="footer__cta" id="book">
         <h2 className="footer__title">Your Building Should Run Smoothly. We Make Sure It Does.</h2>

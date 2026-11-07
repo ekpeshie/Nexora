@@ -2,6 +2,12 @@
 
 export const asset = (name: string) => `${import.meta.env.BASE_URL}assets/${name}`;
 
+/** Responsive WebP set: each photo is exported at 800, 1400 and 2752px wide (`<name>-<width>.webp`). */
+export const photo = (name: string) => ({
+  src: asset(`${name}-1400.webp`),
+  srcSet: [800, 1400, 2752].map((w) => `${asset(`${name}-${w}.webp`)} ${w}w`).join(', '),
+});
+
 export const navLinks = [
   { label: 'About Us', href: '#about' },
   { label: 'Services', href: '#services' },
@@ -33,55 +39,55 @@ export const services = [
   {
     title: 'General Property Operations',
     text: 'Comprehensive day-to-day property support, covering essential operational, maintenance, and facility management needs.',
-    image: asset('services-bg-alt.jpg'),
+    image: 'services-bg-alt',
   },
   {
     title: 'Janitorial Management',
     text: 'Keep your property consistently clean, hygienic, and guest-ready with professionally managed janitorial services.',
-    image: asset('services-bg.jpg'),
+    image: 'services-bg',
   },
   {
     title: 'Housekeeping Services',
     text: 'Reliable housekeeping for a consistently comfortable space.',
-    image: asset('services-bg-alt.jpg'),
+    image: 'services-bg-alt',
   },
   {
     title: 'AC Servicing & Maintenance',
     text: 'Keep your cooling systems efficient and running smoothly.',
-    image: asset('services-bg.jpg'),
+    image: 'services-bg',
   },
   {
     // Copy not in the Figma file yet — placeholder.
     title: 'Generator & Power Management',
     text: 'Scheduled generator servicing and power monitoring so your building stays up when the grid goes down.',
-    image: asset('services-bg-alt.jpg'),
+    image: 'services-bg-alt',
   },
   {
     // Copy not in the Figma file yet — placeholder.
     title: 'Diesel Supply',
     text: 'Planned diesel deliveries and stock tracking, so your generators never run dry.',
-    image: asset('services-bg.jpg'),
+    image: 'services-bg',
   },
   {
     title: 'Deep Cleaning',
     text: 'Thorough cleaning for a healthier, fresher environment.',
-    image: asset('services-bg-alt.jpg'),
+    image: 'services-bg-alt',
   },
   {
     title: 'Fumigation',
     text: 'Protect your property from pests with effective treatment.',
-    image: asset('services-bg.jpg'),
+    image: 'services-bg',
   },
   {
     title: 'Workforce Recruitment',
     text: 'Find reliable, skilled staff for your property needs.',
-    image: asset('services-bg-alt.jpg'),
+    image: 'services-bg-alt',
   },
   {
     // Copy not in the Figma file yet — placeholder.
     title: 'Facility Consumables Supply',
     text: 'Restocking of cleaning supplies, toiletries, and everyday consumables, managed for you.',
-    image: asset('services-bg.jpg'),
+    image: 'services-bg',
   },
 ];
 

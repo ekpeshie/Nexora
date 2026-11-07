@@ -1,9 +1,21 @@
-import { asset } from '../data/content';
+import { asset, photo } from '../data/content';
+
+const hero = photo('hero');
 
 export default function Hero() {
   return (
     <section className="hero" id="top">
-      <img className="hero__image" src={asset('hero.jpg')} alt="" fetchPriority="high" />
+      <img
+        className="hero__image"
+        src={hero.src}
+        srcSet={hero.srcSet}
+        sizes="(max-width: 900px) calc(100vw - 32px), calc(100vw - 64px)"
+        width={1376}
+        height={800}
+        alt="Modern office lounge with plants, desks and chairs, managed by Fichaya"
+        fetchPriority="high"
+        decoding="async"
+      />
       <div className="hero__shade" aria-hidden="true" />
       <div className="hero__content">
         <div className="hero__text">

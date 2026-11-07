@@ -17,9 +17,9 @@
   --color-glass: rgba(0, 0, 0, 0.5);
 
   /* Font families */
-  --font-heading: 'Bricolage Grotesque', system-ui, sans-serif;
-  --font-body: 'DM Sans', system-ui, sans-serif;
-  --font-label: 'Instrument Sans', system-ui, sans-serif;
+  --font-heading: 'Bricolage Grotesque Variable', system-ui, sans-serif;
+  --font-body: 'DM Sans Variable', system-ui, sans-serif;
+  --font-label: 'Instrument Sans Variable', system-ui, sans-serif;
   --font-serif: 'Instrument Serif', Georgia, serif;
   --font-mono: 'DM Mono', ui-monospace, monospace;
   --font-button: 'Inter', system-ui, sans-serif;

@@ -8,7 +8,10 @@ export default function Outcomes() {
           <img
             key={i}
             className="outcomes__photo"
-            src={asset('feature-photo.jpg')}
+            src={asset('feature-photo.webp')}
+            width={230}
+            height={223}
+            decoding="async"
             alt=""
             loading="lazy"
             style={{ left: p.left, top: p.top, transform: `rotate(${p.rotate}deg)` }}
