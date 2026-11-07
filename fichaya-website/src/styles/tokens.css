@@ -1,0 +1,56 @@
+/* Design tokens from the Fichaya Website Figma file (Homepage). */
+:root {
+  /* Colour */
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-ink: #14161a;
+  --color-charcoal: #222222;
+  --color-slate: #3a3f47;
+  --color-grey-3: #eaeaea;
+  --color-grey-7: #ababab;
+  --color-grey-8: #7c7c7c;
+  --color-cream: #fcf8e6;
+  --color-cream-light: #fdfff6;
+  --color-cream-bg: #fffdf5;
+  --color-off-white: #f7f7f5;
+  --color-yellow: #ffcc00;
+  --color-glass: rgba(0, 0, 0, 0.5);
+
+  /* Font families */
+  --font-heading: 'Bricolage Grotesque Variable', system-ui, sans-serif;
+  --font-body: 'DM Sans Variable', system-ui, sans-serif;
+  --font-label: 'Instrument Sans Variable', system-ui, sans-serif;
+  --font-serif: 'Instrument Serif', Georgia, serif;
+  --font-mono: 'DM Mono', ui-monospace, monospace;
+  --font-button: 'Inter', system-ui, sans-serif;
+
+  /* Type scale (size / line-height / letter-spacing) */
+  --h1-size: 56px;
+  --h1-line: 68px;
+  --h1-track: -0.5px;
+  --h2-size: 48px;
+  --h2-line: 58px;
+  --h2-track: -0.4px;
+  --h3-size: 40px;
+  --h3-line: 48px;
+  --h3-track: -0.3px;
+
+  /* Radius */
+  --radius-2xl: 16px;
+  --radius-3xl: 24px;
+  --radius-4xl: 32px;
+  --radius-full: 999px;
+
+  /* Spacing */
+  --space-3xs: 4px;
+  --space-xs: 8px;
+  --space-sm: 12px;
+  --space-base: 16px;
+  --space-md: 20px;
+  --space-lg: 24px;
+  --space-xl3: 40px;
+  --space-5xl: 48px;
+  --space-xl5: 60px;
+  --space-6xl: 64px;
+  --space-xl6: 72px;
+}
